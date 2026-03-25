@@ -2,129 +2,157 @@
 <html lang="en">
 <head>
 
-<!-- ================= SEO META ================= -->
+<!-- ================= META ================= -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ugratara Enterprises Bricks | Dhalapathar</title>
+<title>Ugratara Enterprises Bricks | Premium Manufacturer</title>
 
-<meta name="description" content="Strong and durable bricks in Dhalapathar, Odisha. Fly Ash, Solid & Hollow bricks for construction.">
-<meta name="keywords" content="Bricks Dhalapathar, Fly Ash Bricks Odisha, Brick Manufacturer Odisha">
+<meta name="description" content="Premium Paver Blocks and Cement Bricks Manufacturer in Dhalapathar, Odisha. High quality, durable and reliable supply.">
 
-<!-- ================= STYLES ================= -->
+<!-- ================= GOOGLE FONT ================= -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- ================= ICONS ================= -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
 <style>
 
 /* ===== RESET ===== */
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
-body{background:#f8f9fa;color:#333;}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#f4f6f9;color:#1f2937;}
 
 /* ===== HEADER ===== */
 header{
-    background:#1f2937;
-    color:white;
-    padding:15px;
-    text-align:center;
-    font-size:18px;
-    position:sticky;
-    top:0;
+position:sticky;
+top:0;
+background:white;
+padding:15px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+z-index:1000;
+}
+.logo{font-weight:700;font-size:18px;}
+nav a{
+margin-left:15px;
+color:#374151;
+font-weight:500;
 }
 
 /* ===== HERO ===== */
 .hero{
-    background:linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)),
-    url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover;
-    color:white;
-    text-align:center;
-    padding:110px 20px;
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') center/cover;
+padding:20px;
 }
 
-.hero h2{
-    font-size:24px;
-    margin-bottom:12px;
-    font-weight:700;
-    line-height:1.4;
+.hero h1{
+font-size:32px;
+margin-bottom:10px;
 }
 
 .hero p{
-    font-size:15px;
-    margin-bottom:25px;
-    opacity:0.95;
+margin-bottom:25px;
+opacity:0.9;
 }
 
-/* ===== BUTTON ===== */
 .btn{
-    padding:12px 22px;
-    margin:6px;
-    border-radius:6px;
-    background:#f97316;
-    color:white;
-    display:inline-block;
-    font-weight:bold;
-    transition:0.3s;
+background:#f97316;
+color:white;
+padding:12px 22px;
+border-radius:8px;
+display:inline-flex;
+align-items:center;
+gap:6px;
+font-weight:600;
+margin:5px;
+transition:0.3s;
 }
-.btn:hover{background:#ea580c}
+.btn:hover{transform:scale(1.05);}
 
 /* ===== SECTION ===== */
-section{padding:50px 20px;}
-.container{max-width:1100px;margin:auto;}
-h2.section-title{text-align:center;margin-bottom:20px;color:#1f2937}
+section{padding:60px 20px;}
+.container{max-width:1200px;margin:auto;}
+h2{text-align:center;margin-bottom:30px;font-size:26px;}
 
 /* ===== GRID ===== */
 .grid{
-    display:grid;
-    gap:20px;
+display:grid;
+gap:25px;
 }
 @media(min-width:768px){
-    .grid-3{grid-template-columns:repeat(3,1fr);}
+.grid-2{grid-template-columns:repeat(2,1fr);}
+.grid-3{grid-template-columns:repeat(3,1fr);}
 }
 
 /* ===== CARD ===== */
 .card{
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    text-align:center;
-    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+.card:hover{transform:translateY(-8px);}
+.card img{
+width:100%;
+height:230px;
+object-fit:cover;
+}
+.card-content{
+padding:15px;
+text-align:center;
 }
 
-/* ===== GALLERY ===== */
-.gallery img{
-    width:100%;
-    border-radius:10px;
+/* ===== STATS ===== */
+.stats{
+background:#111827;
+color:white;
+text-align:center;
 }
+.stats h3{font-size:28px;}
 
 /* ===== CONTACT ===== */
-.contact p{margin:8px 0;}
-
-/* ===== FORM ===== */
-form input,form textarea{
-    width:100%;
-    padding:10px;
-    margin:10px 0;
-    border-radius:6px;
-    border:1px solid #ccc;
+.contact-box{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.05);
+text-align:center;
 }
 
 /* ===== FOOTER ===== */
 footer{
-    background:#111827;
-    color:white;
-    text-align:center;
-    padding:20px;
+background:#111827;
+color:white;
+text-align:center;
+padding:20px;
 }
 
-/* ===== FLOAT BUTTONS ===== */
+/* ===== FLOAT ===== */
 .float{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    display:flex;
-    flex-direction:column;
-    gap:10px;
+position:fixed;
+bottom:20px;
+right:20px;
+display:flex;
+flex-direction:column;
+gap:12px;
 }
 .float a{
-    padding:14px;
-    border-radius:50%;
-    color:white;
+padding:16px;
+border-radius:50%;
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 6px 20px rgba(0,0,0,0.2);
 }
 .whatsapp{background:#25D366;}
 .call{background:#2563eb;}
@@ -134,136 +162,108 @@ footer{
 
 <body>
 
-<!-- ===== HEADER ===== -->
+<!-- HEADER -->
 <header>
-Ugratara Enterprises Bricks
+<div class="logo">Ugratara Bricks</div>
+<nav>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
-<!-- ===== HERO ===== -->
+<!-- HERO -->
 <section class="hero">
-<h2>Strong & Durable Bricks</h2>
-<p>Trusted Brick Supplier in Dhalapathar, Odisha</p>
+<div>
+<h1>Premium Paver & Cement Bricks</h1>
+<p>Trusted Manufacturer in Dhalapathar, Odisha</p>
 
-<!-- ✅ Updated Number -->
-<a href="tel:+918763112535" class="btn">📞 Call Now</a>
+<a href="tel:+918763112535" class="btn">
+<span class="material-symbols-outlined">call</span> Call
+</a>
 
-<!-- ✅ Updated WhatsApp -->
-<a href="https://wa.me/918763112535" class="btn">💬 WhatsApp</a>
-</section>
-
-<!-- ===== ABOUT ===== -->
-<section>
-<div class="container">
-<h2 class="section-title">About Us</h2>
-<p>
-Ugratara Enterprises Bricks is a trusted brick manufacturer in Dhalapathar, Odisha.
-We provide strong, durable, and affordable bricks for all construction needs.
-</p>
+<a href="https://wa.me/918763112535" class="btn">
+<span class="material-symbols-outlined">chat</span> WhatsApp
+</a>
 </div>
 </section>
 
-<!-- ===== PRODUCTS ===== -->
-<section>
+<!-- PRODUCTS -->
+<section id="products">
 <div class="container">
-<h2 class="section-title">Our Products</h2>
+<h2>Our Products</h2>
 
-<div class="grid grid-3">
+<div class="grid grid-2">
+
 <div class="card">
-<h3>Fly Ash Bricks</h3>
-<p>Eco-friendly, strong & uniform</p>
+<img src="YOUR_PAVER_IMAGE">
+<div class="card-content">
+<h3>Paver / Interlocking Bricks</h3>
+<p>Heavy-duty blocks for roads & pathways</p>
+</div>
 </div>
 
 <div class="card">
-<h3>Solid Bricks</h3>
-<p>Traditional strength for construction</p>
-</div>
-
-<div class="card">
-<h3>Hollow Bricks</h3>
-<p>Lightweight and cost-effective</p>
+<img src="YOUR_CEMENT_IMAGE">
+<div class="card-content">
+<h3>Cement Bricks</h3>
+<p>Strong bricks for construction</p>
 </div>
 </div>
 
+</div>
 </div>
 </section>
 
-<!-- ===== WHY US ===== -->
-<section>
+<!-- STATS -->
+<section class="stats">
+<div class="container grid grid-3">
+<div>
+<h3>5+ Years</h3>
+<p>Experience</p>
+</div>
+<div>
+<h3>500+</h3>
+<p>Projects Supply</p>
+</div>
+<div>
+<h3>100%</h3>
+<p>Quality Focus</p>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
 <div class="container">
-<h2 class="section-title">Why Choose Us</h2>
+<h2>Contact Us</h2>
 
-<div class="grid grid-3">
-<div class="card">High Durability</div>
-<div class="card">Affordable Pricing</div>
-<div class="card">Fast Delivery</div>
-</div>
-
-</div>
-</section>
-
-<!-- ===== GALLERY ===== -->
-<section>
-<div class="container">
-<h2 class="section-title">Gallery</h2>
-
-<div class="grid grid-3 gallery">
-<img src="https://via.placeholder.com/300">
-<img src="https://via.placeholder.com/300">
-<img src="https://via.placeholder.com/300">
-</div>
-
-</div>
-</section>
-
-<!-- ===== CONTACT ===== -->
-<section>
-<div class="container contact">
-<h2 class="section-title">Contact Us</h2>
-
+<div class="contact-box">
 <p><strong>Phone:</strong> +91 8763112535</p>
 <p><strong>Location:</strong> Dhalapathar, Odisha</p>
 
-<a href="https://maps.app.goo.gl/5sKgZLT31ZaijUU6A?g_st=ac" target="_blank" class="btn">
-📍 Open in Google Maps
+<a href="https://maps.app.goo.gl/5sKgZLT31ZaijUU6A?g_st=ac" class="btn" target="_blank">
+📍 View Location
 </a>
+</div>
 
 </div>
 </section>
 
-<!-- ===== FORM ===== -->
-<section>
-<div class="container">
-<h2 class="section-title">Get Quote</h2>
-
-<form id="contactForm">
-<input type="text" placeholder="Your Name" required>
-<input type="tel" placeholder="Phone Number" required>
-<textarea placeholder="Your Requirement"></textarea>
-<button class="btn" type="submit">Submit</button>
-</form>
-
-</div>
-</section>
-
-<!-- ===== FOOTER ===== -->
+<!-- FOOTER -->
 <footer>
 © 2026 Ugratara Enterprises Bricks
 </footer>
 
-<!-- ===== FLOAT BUTTONS ===== -->
+<!-- FLOAT BUTTON -->
 <div class="float">
-<a href="https://wa.me/918763112535" class="whatsapp">W</a>
-<a href="tel:+918763112535" class="call">C</a>
-</div>
+<a href="https://wa.me/918763112535" class="whatsapp">
+<span class="material-symbols-outlined">chat</span>
+</a>
 
-<!-- ===== JS ===== -->
-<script>
-document.getElementById("contactForm").addEventListener("submit", function(e){
-    e.preventDefault();
-    alert("✅ Your enquiry has been submitted!");
-    this.reset();
-});
-</script>
+<a href="tel:+918763112535" class="call">
+<span class="material-symbols-outlined">call</span>
+</a>
+</div>
 
 </body>
 </html>
